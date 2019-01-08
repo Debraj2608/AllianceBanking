@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" 
+         version="2.5" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"> 
+
+  <display-name>Archetype Created Web Application</display-name>
+  
+  <servlet>
+  	<description></description>
+  	<display-name>HomePageController</display-name>
+  	<servlet-name>HomePageController</servlet-name>
+  	<servlet-class>com.alliance.controller.HomePageController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>HomePageController</servlet-name>
+  	<url-pattern>/HomePageController</url-pattern>
+  </servlet-mapping>
+   <servlet>
+  	<description></description>
+  	<display-name>LoginController</display-name>
+  	<servlet-name>LoginController</servlet-name>
+  	<servlet-class>com.alliance.controller.LoginController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LoginController</servlet-name>
+  	<url-pattern>/LoginController</url-pattern>
+  </servlet-mapping>
+    <servlet>
+    <description></description>
+    <display-name>IndexController</display-name>
+  	<servlet-name>IndexController</servlet-name>
+  	<servlet-class>com.alliance.controller.IndexController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>IndexController</servlet-name>
+  	<url-pattern>/</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<description></description>
+  	<display-name>Register1Controller</display-name>
+  	<servlet-name>Register1Controller</servlet-name>
+  	<servlet-class>com.alliance.controller.Register1Controller</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Register1Controller</servlet-name>
+  	<url-pattern>/Register1Controller</url-pattern>
+  </servlet-mapping>
+</web-app>
