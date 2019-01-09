@@ -4,22 +4,20 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Registration</title>
+<title>registration</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="css/register.css" />
+<link rel="stylesheet" href="/OnlineBanking/css/register.css" />
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+<script src="../javascript/reg.js"></script>
 </head>
-<body>
+<body style="background-color: lightblue;">
 	<%@include file="header.jsp"%>
 	<div class="container">
 		<div class='text-center'>
@@ -34,7 +32,8 @@
 					Name:</label>
 				<div class="col-sm-8">
 					<input type="text" class="form-control" name="firstname"
-						id="firstname" placeholder="Enter First Name">
+						id="firstname" placeholder="Enter First Name" />
+					<p id="p1" style="color: red"></p>
 				</div>
 			</div>
 			<div class="form-group">
@@ -42,7 +41,9 @@
 					Name:</label>
 				<div class="col-sm-8">
 					<input type="text" class="form-control" name="middlename"
-						id="middlename" placeholder="Enter Middle Name">
+						id="middlename" placeholder="Enter Middle Name" />
+					<p id="p2" style="color: red"></p>
+
 				</div>
 			</div>
 			<div class="form-group">
@@ -51,6 +52,17 @@
 				<div class="col-sm-8">
 					<input type="text" class="form-control" name="lastname"
 						id="lastname" placeholder="Enter Last Name">
+					<p id="p3" style="color: red"></p>
+
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="email" class="control-label col-sm-3">Email:</label>
+				<div class="col-sm-8">
+					<input type="email" class="form-control" name="email" id="email"
+						placeholder="Enter Email ID">
+											<p id="p4" style="color: red"></p>
+						
 				</div>
 			</div>
 			<div class="form-group" class="input-append date form_datetime">
@@ -60,21 +72,16 @@
 					<input type="text" class="form-control" name="dob" id="dob"
 						placeholder="DD-MM-YYYY"> <span class="add-on"><i
 						class="icon-th"></i></span>
-				</div>
-			</div>
-			<div class="form-group">
-				<label for="email" class="control-label col-sm-3">Email:</label>
-				<div class="col-sm-8">
-					<input type="email" class="form-control" name="email" id="email"
-						placeholder="Enter Email ID">
+					<p id="p5" style="color: red"></p>
 				</div>
 			</div>
 			<div class="form-group">
 				<label for="contactnumber" class="control-label col-sm-3">Contact
 					Number:</label>
 				<div class="col-sm-8">
-					<input type="text" class="form-control" name="con_no" id="con_no"
+					<input type="text" class="form-control" name="cno" id="cno"
 						placeholder="Enter Contact Number">
+					<p id="p6" style="color: red"></p>
 				</div>
 			</div>
 			<div class="form-group">
@@ -82,6 +89,7 @@
 				<div class="col-sm-8">
 					<input type="text" class="form-control" name="city" id="city"
 						placeholder="Enter City">
+					<p id="p7" style="color: red"></p>
 				</div>
 			</div>
 			<div class="form-group">
@@ -89,20 +97,24 @@
 				<div class="col-sm-8">
 					<input type="text" class="form-control" name="occupation"
 						id="occupation" placeholder="Enter Occupation">
+					<p id="p8" style="color: red"></p>
 				</div>
 			</div>
 			<div class="form-group">
-				<label for="occupation" class="control-label col-sm-3">Password:</label>
+				<label for="password1" class="control-label col-sm-3">Password:</label>
 				<div class="col-sm-8">
-					<input type="password" class="form-control" name="password"
-						id="password" placeholder="Enter password">
+					<input type="password" class="form-control" name="password1"
+						id="password1" placeholder="Enter Password">
+					<p id="p9" style="color: red"></p>
 				</div>
 			</div>
 			<div class="form-group">
-				<label for="occupation" class="control-label col-sm-3">Re-enter Password:</label>
+				<label for="password2" class="control-label col-sm-3">Re-Enter
+					Password:</label>
 				<div class="col-sm-8">
-					<input type="password" class="form-control" name="re enter password"
-						id="re enter password" placeholder="Re-enter password">
+					<input type="password" class="form-control" name="password2"
+						id="password2" placeholder="Re Enter Password">
+					<p id="p10" style="color: red"></p>
 				</div>
 			</div>
 			<div class="col-md-12">

@@ -45,7 +45,7 @@ public class LoginController extends HttpServlet {
 		}
 		if(validate)
 		{
-			view = request.getRequestDispatcher("WEB-INF/views/userHomePage.jsp");
+			view = request.getRequestDispatcher("WEB-INF/views/profile.jsp");
 		}
 		else
 		{

@@ -26,7 +26,7 @@
 			<div class="Absolute-Center is-Responsive">
 				<div id="logo-container"></div>
 				<div class="col-sm-12 col-md-10 col-md-offset-1">
-					<form action="LoginController" id="loginForm" method="post">
+					<form action="AdminLoginController" id="loginForm" method="post">
 						<div class="form-group input-group">
 							<span class="input-group-addon"><i
 								class="glyphicon glyphicon-user"></i></span> <input
@@ -39,11 +39,6 @@
 								class="form-control" type="password" name='password'
 								placeholder="password" />
 						</div>
-						<div class="checkbox">
-							<label> <input type="checkbox"> I agree to the <a
-								href="#">Terms and Conditions</a>
-							</label>
-						</div>
 						<div class="col-md-12">
 							<div class="text-center">
 								<div class="form-actions">
@@ -51,19 +46,17 @@
 								</div>
 							</div>
 						</div>
+						<div class="col-md-12">
+							<div class="text-center">
+								<div class="form-actions">
+									<a href="LoginRedirectController">Login as Bank User</a>
+								</div>
+							</div>
+						</div>
 					</form>
 					<p>
 					<p>
-					<div>
-						<div class="text-center">
-							<a href="RegisterRedirectController">can't login? Register here</a>
-						</div>
-						<p>
-						<p>
-						<div class="text-center">
-							<a href="AdminLoginRedirectController">Login as Administrator</a>
-						</div>
-					</div>
+					
 				</div>
 			</div>
 		</div>

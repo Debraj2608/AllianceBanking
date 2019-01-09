@@ -29,6 +29,7 @@ public class HomePageController extends HttpServlet {
 	{
 		RequestDispatcher view = null;
 		String button = request.getParameter("module");
+		
 		if(button.equals("register"))
 		{
 			view = request.getRequestDispatcher("WEB-INF/views/register.jsp");
