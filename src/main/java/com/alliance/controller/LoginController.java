@@ -45,11 +45,11 @@ public class LoginController extends HttpServlet {
 		}
 		if(validate)
 		{
-			view = request.getRequestDispatcher("WEB-INF/views/profile.jsp");
+			view = request.getRequestDispatcher("views/profile.jsp");
 		}
 		else
 		{
-			view = request.getRequestDispatcher("WEB-INF/views/login.jsp");
+			view = request.getRequestDispatcher("views/login.jsp");
 		}
 		view.forward(request, response);
 	}

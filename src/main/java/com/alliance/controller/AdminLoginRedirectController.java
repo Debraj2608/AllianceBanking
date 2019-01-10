@@ -26,7 +26,7 @@ public class AdminLoginRedirectController extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		RequestDispatcher view = request.getRequestDispatcher("WEB-INF/views/adminLogin.jsp");
+		RequestDispatcher view = request.getRequestDispatcher("views/adminLogin.jsp");
 		view.forward(request, response);
 	}
 

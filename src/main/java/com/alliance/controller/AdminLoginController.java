@@ -57,12 +57,12 @@ public class AdminLoginController extends HttpServlet {
 		
 		if(status)
 		{
-			RequestDispatcher rs= request.getRequestDispatcher("WEB-INF/views/admin.jsp");
+			RequestDispatcher rs= request.getRequestDispatcher("views/admin.jsp");
 			rs.forward(request, response);
 		}
 		else
 		{
-			RequestDispatcher rs= request.getRequestDispatcher("WEB-INF/views/adminLogin.jsp");
+			RequestDispatcher rs= request.getRequestDispatcher("views/adminLogin.jsp");
 			rs.forward(request, response);
 		}
 		

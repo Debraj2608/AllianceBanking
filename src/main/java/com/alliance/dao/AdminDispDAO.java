@@ -17,7 +17,7 @@ public class AdminDispDAO {
 		List<UserModel> al=new ArrayList<UserModel>();
 		Session s=HibernateUtil.getSessionFactory();
 		
-		al=s.createQuery("from UserModel where customerID not in(select customer_id from AccountModel)").list();
+		al=s.createQuery("from UserModel where customerID not in(select userModel from AccountModel)").list();
 		System.out.println(al.size());
 		return al;
 	}

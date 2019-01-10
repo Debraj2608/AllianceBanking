@@ -99,6 +99,13 @@
   	<servlet-name>AdminLinkController</servlet-name>
   	<servlet-class>com.alliance.controller.AdminLinkController</servlet-class>
   </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>UpdatePageRedirectController</display-name>
+  	<servlet-name>UpdatePageRedirectController</servlet-name>
+  	<servlet-class>com.alliance.controller.UpdatePageRedirectController</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>Register1Controller</servlet-name>
   	<url-pattern>/Register1Controller</url-pattern>
@@ -134,5 +141,9 @@
   <servlet-mapping>
   	<servlet-name>AdminLinkController</servlet-name>
   	<url-pattern>/AdminLinkController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>UpdatePageRedirectController</servlet-name>
+  	<url-pattern>/UpdatePageRedirectController</url-pattern>
   </servlet-mapping>
 </web-app>

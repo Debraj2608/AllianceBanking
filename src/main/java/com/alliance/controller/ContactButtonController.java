@@ -26,7 +26,7 @@ public class ContactButtonController extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		RequestDispatcher view = request.getRequestDispatcher("WEB-INF/views/contact.jsp");
+		RequestDispatcher view = request.getRequestDispatcher("views/contact.jsp");
 		view.forward(request, response);
 	}
 

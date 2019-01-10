@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.alliance.bo.AdminLinkBO;
 import com.alliance.model.AccountModel;
+import com.alliance.model.UserModel;
 import com.alliance.util.AutoGenAccno;
 
 /**
@@ -32,8 +33,10 @@ public class AdminLinkController extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		AdminLinkBO ab=new AdminLinkBO();
 		AccountModel am=new AccountModel();
+		UserModel um = new UserModel();
 		AutoGenAccno ag=new AutoGenAccno();
-		am.setCustomer_id(request.getParameter("module"));
+		um.setCustomerID(request.getParameter("module"));
+		am.setUserModel(um);
 		am.setAccount_no(ag.getAccountNumber());
 		Boolean status=ab.insertDetails(am);
 		RequestDispatcher rs=null;
@@ -41,13 +44,12 @@ public class AdminLinkController extends HttpServlet {
 		String no="Unable to link this User";
 		if(status)
 		{
-			 rs= request.getRequestDispatcher("WEB-INF/views/adminUnapproved.jsp");
+			 rs= request.getRequestDispatcher("views/AccountApproved.jsp");
 			 request.setAttribute("msg",ys);
-			 
 		}
 		else
 		{
-			 rs= request.getRequestDispatcher("WEB-INF/views/adminUnapproved.jsp");
+			 rs= request.getRequestDispatcher("views/AccountNotApproved.jsp");
 			 request.setAttribute("msg",no);
 		}
 		rs.forward(request, response);

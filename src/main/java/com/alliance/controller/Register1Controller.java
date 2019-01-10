@@ -44,10 +44,10 @@ public class Register1Controller extends HttpServlet {
 		String lname = request.getParameter("lastname");
 		String dateOfBirth = request.getParameter("dob");
 		String email = request.getParameter("email");
-		String contactNo = request.getParameter("con_no");
+		String contactNo = request.getParameter("cno");
 		String city = request.getParameter("city");
 		String occupation = request.getParameter("occupation");
-		String password = request.getParameter("password");
+		String password = request.getParameter("password1");
 		
 		SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
 		Date date = null;
@@ -76,11 +76,11 @@ public class Register1Controller extends HttpServlet {
 		boolean status = register1BO.register1validate(userModel);
 		if(status)
 		{
-			view = request.getRequestDispatcher("WEB-INF/views/userDetailsPage.jsp");
+			view = request.getRequestDispatcher("views/userDetailsPage.jsp");
 		}
 		else
 		{
-			view = request.getRequestDispatcher("WEB-INF/views/index.jsp");
+			view = request.getRequestDispatcher("views/index.jsp");
 		}
 		view.forward(request, response);
 	}

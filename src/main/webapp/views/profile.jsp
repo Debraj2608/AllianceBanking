@@ -28,7 +28,7 @@
 
 				<ul class="list">
 					<p>
-						<a href="update" style="text-decoration: none">Update Profile</a>
+						<a href="UpdatePageRedirectController" style="text-decoration: none">Update Profile</a>
 					</p>
 
 				</ul>

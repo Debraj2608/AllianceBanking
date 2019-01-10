@@ -20,7 +20,6 @@
 		
 	<%= 
 		um.getCustomerID()%>-
-		
 		<%=um.getFirstName()%>
 			<%=um.getMiddleName()%>
 				<%=um.getLastName()%>-
@@ -28,8 +27,7 @@
 						<%=um.getCity()%>-
 							<%=um.getContactNumber()%>-
 								<%=um.getOccupation()%>
-								<a href="AdminLinkController?module=<%= um.getCustomerID() %>">Link This User</a>
-								<%=request.getAttribute("msg") %>
+								<a href="AdminLinkController?module=<%= um.getCustomerID() %>">Link This User</a>	
 								<p>
 								<p>
 								

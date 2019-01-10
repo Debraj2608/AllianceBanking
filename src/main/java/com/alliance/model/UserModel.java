@@ -10,32 +10,23 @@ import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 
 @Entity
-@Table (name = "cust_master",uniqueConstraints = @UniqueConstraint(name = "email_user_uk",columnNames = "email"))
+@Table (name = "cust_master")
 public class UserModel implements Serializable
 {
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	@Column
+	
 	private String firstName;
-	@Column
 	private String middleName;
-	@Column
 	private String lastName;
-	@Column
 	private String email;
-	@Column
 	private Date dob;
-	@Column
 	private String city;
-	@Column
 	private String contactNumber;
-	@Column
 	private String occupation;
-	@Id
 	private String customerID;
-	@Column
 	private String password;
 	
 	public UserModel() 
@@ -43,7 +34,7 @@ public class UserModel implements Serializable
 		super();
 		// TODO Auto-generated constructor stub
 	}
-
+	@Column
 	public String getFirstName() {
 		return firstName;
 	}
@@ -51,7 +42,7 @@ public class UserModel implements Serializable
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
 	}
-
+	@Column
 	public String getMiddleName() {
 		return middleName;
 	}
@@ -59,7 +50,7 @@ public class UserModel implements Serializable
 	public void setMiddleName(String middleName) {
 		this.middleName = middleName;
 	}
-
+	@Column
 	public String getLastName() {
 		return lastName;
 	}
@@ -67,7 +58,7 @@ public class UserModel implements Serializable
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
-
+	@Column
 	public String getEmail() {
 		return email;
 	}
@@ -76,6 +67,7 @@ public class UserModel implements Serializable
 		this.email = email;
 	}
 	
+	@Column
 	public Date getDob() {
 		return dob;
 	}
@@ -84,6 +76,7 @@ public class UserModel implements Serializable
 		this.dob = dob;
 	}
 
+	@Column
 	public String getCity() {
 		return city;
 	}
@@ -91,7 +84,8 @@ public class UserModel implements Serializable
 	public void setCity(String city) {
 		this.city = city;
 	}
-
+	
+	@Column
 	public String getContactNumber() {
 		return contactNumber;
 	}
@@ -100,6 +94,7 @@ public class UserModel implements Serializable
 		this.contactNumber = contactNumber;
 	}
 
+	@Column
 	public String getOccupation() {
 		return occupation;
 	}
@@ -108,6 +103,7 @@ public class UserModel implements Serializable
 		this.occupation = occupation;
 	}
 
+	@Id
 	public String getCustomerID() {
 		return customerID;
 	}
@@ -116,6 +112,7 @@ public class UserModel implements Serializable
 		this.customerID = customerID;
 	}
 
+	@Column
 	public String getPassword() {
 		return password;
 	}

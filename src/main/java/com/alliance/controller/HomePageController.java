@@ -32,11 +32,11 @@ public class HomePageController extends HttpServlet {
 		
 		if(button.equals("register"))
 		{
-			view = request.getRequestDispatcher("WEB-INF/views/register.jsp");
+			view = request.getRequestDispatcher("views/register.jsp");
 		}
 		if(button.equals("login"))
 		{
-			view = request.getRequestDispatcher("WEB-INF/views/login.jsp");
+			view = request.getRequestDispatcher("views/login.jsp");
 		}
 		view.forward(request, response);
 	}

@@ -9,9 +9,9 @@
 </head>
 <body>
 
-welcome Admin
+welcome Administrator
 
-<a href="AdminDispController">Show Unapproved Request</a>
+<a href="AdminDispController">Show Un-approved Request</a>
 	
 
 
